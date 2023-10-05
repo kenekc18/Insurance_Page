@@ -35,10 +35,14 @@ nav{
     margin:15px 20px;
 }
 
-.hero-container{
+.hero{
     background-color: hsl(256, 26%, 20%);
     position:relative;
     min-height: 400px;
+}
+
+.hero-container{
+    position:relative;
 }
 
 .hero-img{
@@ -46,6 +50,10 @@ nav{
 }
 
 .hero-img-ds{
+    display: none;
+}
+
+.ds-img{
     display: none;
 }
 
@@ -190,7 +198,18 @@ nav{
         display:none;
     }
 
+    .hero{
+        display:flex;
+    }
+
+
+   
+
     .hero-img-ds{
+        display:block;
+    }
+
+    .ds-img{
         display: block;
     }
 
