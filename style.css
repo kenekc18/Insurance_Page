@@ -45,11 +45,11 @@ nav{
     position:relative;
 }
 
-.hero-img{
+.mb-img{
     width:100%;
 }
 
-.hero-img-ds{
+.icon-img-ds{
     display: none;
 }
 
@@ -200,20 +200,41 @@ nav{
 
     .hero{
         display:flex;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        min-height:400px;
     }
 
+    .hero-section{
+        position:relative
+    }
 
-   
-
-    .hero-img-ds{
+    .icon-img-ds{
         display:block;
     }
 
     .ds-img{
         display: block;
+        object-fit: contain;
+        position:absolute;
+        right:10%;
     }
 
-    .hero-img-mb, .hero-img{
+    .hero-section{
+        text-align: start;
+    }
+
+    .hero-section h1{
+        padding:0;
+    }
+
+    .ds-right{
+        top:0;
+        right:0;
+    }
+
+    .hero-img-mb, .mb-img{
         display:none;
     }
 
