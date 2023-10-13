@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,7 +16,12 @@ h1,h2,h3{
 nav{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     margin:20px 25px;
+}
+
+nav ul{
+    display: flex;
 }
 
 .nav-bar{
@@ -82,10 +88,6 @@ nav{
 
 .txt {
     position: absolute;
-    /* left:50%;
-    top:50%;
-    margin-left:-50px;
-    margin-top: -50px; */
     padding: 5px 20px;
     margin:15px 12px;
     border-radius: 10px;
@@ -101,7 +103,6 @@ nav{
     text-transform: uppercase;
     border:2px solid white;
 }
-
 
 .hero-section p{
     font-weight: 400;
@@ -137,6 +138,11 @@ nav{
     margin-bottom:11px;
     font-size: 24px;
     font-weight: 400;
+}
+
+.line{
+    border:1px solid hsl(256, 26%, 20%);
+    width:100px;
 }
 
 .dark-card{
@@ -199,15 +205,14 @@ nav{
     }
 
     .hero{
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        position:relative;
-        min-height:400px;
+        position: inherit;
+        min-height:600px;
     }
 
     .hero-section{
-        position:relative
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .icon-img-ds{
@@ -216,9 +221,32 @@ nav{
 
     .ds-img{
         display: block;
-        object-fit: contain;
         position:absolute;
+        width:50%;
         right:10%;
+        top:40%;
+        z-index:3;
+    }
+
+    .txt{
+        width:50%;
+        position: relative;
+        left:100px;
+        top:200px;
+    }
+
+    .ds-left{
+        position:absolute;
+        left:0;
+        top:100%;
+    }
+
+    .ds-right{
+        position: absolute;
+        width:350px;
+        top:25%;
+        right:0;
+        z-index: 4;
     }
 
     .hero-section{
@@ -229,17 +257,30 @@ nav{
         padding:0;
     }
 
-    .ds-right{
-        top:0;
-        right:0;
-    }
-
     .hero-img-mb, .mb-img{
         display:none;
+    }
+
+    .container{
+        margin:5rem 0;
+        padding:4rem 0;
     }
 
     .cards{
         display:flex;
         flex-direction: row;
+    }
+
+    .heading{
+        margin:2rem 3.5rem;
+        padding-top:2rem;
+    }
+
+    .line{
+        margin:1.5rem 0;
+    }
+
+    .container-title{
+        font-size: 2rem;
     }
 }
