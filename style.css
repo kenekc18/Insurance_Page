@@ -210,9 +210,6 @@ nav ul{
     }
 
     .hero-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: start;
     }
 
@@ -230,8 +227,7 @@ nav ul{
     }
 
     .txt{
-        width:50%;
-        /* position: relative; */
+        width:45%;
         left:0;
         top:200px;
         margin:15px 20px;
@@ -294,10 +290,59 @@ nav ul{
     }
 
     .card{
-        margin:15px 16px;
+        margin:15px 18px;
     }
 
     .card .icon{
         margin:10px 0;
+    }
+
+    footer{
+        background-color:  hsl(0, 0%, 98%);
+        background-image: url(./images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        padding:20px 15px;
+    }
+
+    .footer-nav{
+        display:flex;
+        justify-content: space-between;
+        margin-top:20px;
+        margin-bottom: 5px;
+        padding:15px 20px;
+    }
+
+    .foot-logo{
+        width:90px;
+        height:15px;
+    }
+
+    .foot-logo img{
+        max-width:100%;
+        max-height: 100%;
+    }
+
+    .line-02{
+        border:0.5px solid hsl(273, 4%, 51%);
+        margin-bottom:25px;
+        padding: 0 20px;
+    }
+
+    .footer-bar{
+        display:flex;
+        text-transform: uppercase;
+    }
+
+    .sub{
+        display:flex;
+        flex-direction:column;
+        font-size: 14px;
+        margin:10px 15px;
+        width:25%;
+    }
+
+    .title{
+        color:hsl(273, 4%, 51%);
+        margin:15px 0;
     }
 }
