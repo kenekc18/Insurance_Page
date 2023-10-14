@@ -205,7 +205,7 @@ nav ul{
     }
 
     .hero{
-        position: inherit;
+        /* position: inherit; */
         min-height:600px;
     }
 
@@ -213,6 +213,7 @@ nav ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: start;
     }
 
     .icon-img-ds{
@@ -222,17 +223,18 @@ nav ul{
     .ds-img{
         display: block;
         position:absolute;
-        width:50%;
-        right:10%;
+        width:45%;
+        right:5%;
         top:40%;
         z-index:3;
     }
 
     .txt{
         width:50%;
-        position: relative;
-        left:100px;
+        /* position: relative; */
+        left:0;
         top:200px;
+        margin:15px 20px;
     }
 
     .ds-left{
@@ -243,18 +245,21 @@ nav ul{
 
     .ds-right{
         position: absolute;
-        width:350px;
-        top:25%;
+        width:300px;
+        top:22%;
         right:0;
         z-index: 4;
     }
 
-    .hero-section{
-        text-align: start;
-    }
 
     .hero-section h1{
         padding:0;
+        font-size: 3rem;
+    }
+
+    .txt-content{
+        font-size: 14px;
+        line-height: 1.5rem;
     }
 
     .hero-img-mb, .mb-img{
@@ -282,5 +287,17 @@ nav ul{
 
     .container-title{
         font-size: 2rem;
+    }
+
+    .cards{
+        text-align: start;
+    }
+
+    .card{
+        margin:15px 16px;
+    }
+
+    .card .icon{
+        margin:10px 0;
     }
 }
